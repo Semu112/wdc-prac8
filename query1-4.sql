@@ -1,0 +1,1 @@
+SELECT address FROM address WHERE address_id = (SELECT address_id FROM store WHERE store_id = (SELECT DISTINCT store_id FROM film INNER JOIN inventory ON film.film_id = inventory.film_id WHERE title = 'TWISTED PIRATES'));
