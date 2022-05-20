@@ -25,7 +25,7 @@ router.post('/pushactor', function(req, res, next){
         return;
       }
 
-      console.log("first name: " + req.body.firstName + ", last name: " + req.body.lastName);
+      console.log("pushing " + req.body.firstName + " " + req.body.lastName);
     })
 
     res.send();
